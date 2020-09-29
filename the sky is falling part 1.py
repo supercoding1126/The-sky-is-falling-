@@ -1,3 +1,8 @@
+# The sky is falling
+# By SuperCoding
+# Python 3.8.5
+# Mac os
+
 import turtle
 import random
 

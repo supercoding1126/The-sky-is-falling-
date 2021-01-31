@@ -12,22 +12,25 @@ Lives = 3
 falling = True
 Game = True
 
+turtle.register_shape('gas1.gif')
+turtle.register_shape('alien1.gif')
+turtle.register_shape('rocket1.gif')
+turtle.register_shape('space1.gif')
+
+
+
 wn = turtle.Screen()
 wn.bgcolor('green')
-wn.bgpic('/Users/shining/Desktop/space1.gif')
+wn.bgpic('space1.gif')
 wn.title('by super coding')
 wn.setup(width=800, height=600)
 wn.tracer(0)
-
-turtle.addshape('/Users/shining/Desktop/rocket1.gif')
-turtle.addshape('/Users/shining/Desktop/alien1.gif')
-turtle.addshape('/Users/shining/Desktop/gas1.gif')
 
 
 player = turtle.Turtle()
 player.penup()
 player.speed(0)
-player.shape('/Users/shining/Desktop/rocket1.gif')
+player.shape('rocket1.gif')
 player.shapesize(1.5)
 player.color('blue')
 player.goto(0, -250)
@@ -41,7 +44,7 @@ for x in range(10):
    enemy = turtle.Turtle()
    enemy.penup()
    enemy.speed(0)
-   enemy.shape('/Users/shining/Desktop/alien1.gif')
+   enemy.shape('alien1.gif')
    enemy.color('red')
    enemy.fd(150)
    enemy.speed = (random.randint(1,4))
@@ -55,7 +58,7 @@ for x in range(10):
    power_up = turtle.Turtle()
    power_up.penup()
    power_up.speed(0)
-   power_up.shape('/Users/shining/Desktop/gas1.gif')
+   power_up.shape('/gas1.gif')
    power_up.color('yellow')
    power_up.backward(150)
    power_up.speed = (random.randint(1,4))
